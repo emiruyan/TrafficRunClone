@@ -2860,7 +2860,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1362515458}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -161.9, y: 0, z: 121.7}
+  m_LocalPosition: {x: -165.2, y: 0, z: 122.45}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2879,11 +2879,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc21757d3552eaf498a4444ffe7e2119, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyCarPrefab: {fileID: 6479470506111691265, guid: 6a9efb20065e2b047a50fe3f5a09a5e9, type: 3}
   minZ: 110
-  maxZ: 134
-  x: -162
+  maxZ: 130
+  x: -167
   interval: 2
+  enemyCarPrefab:
+  - {fileID: 6479470506111691265, guid: 6a9efb20065e2b047a50fe3f5a09a5e9, type: 3}
+  - {fileID: 6269229079788652563, guid: a20fdb8bc271de04a845b5c8e2aa723a, type: 3}
+  - {fileID: 7584621170090828311, guid: df8e5c5f3d1a2244384ca1d85ee42ea9, type: 3}
+  - {fileID: 2020509422414405528, guid: 62b736841dd49b74f93351c3ecc4241c, type: 3}
+  - {fileID: 1165237138824213245, guid: 72c454b6aaf33a34c84f86e5c5893abb, type: 3}
 --- !u!1001 &1381970884
 PrefabInstance:
   m_ObjectHideFlags: 0
