@@ -27,6 +27,7 @@ public class SpawnController : MonoBehaviour
 
 
    [SerializeField] private GameObject[] enemyCarPrefab;
+   
 
 
    private void Start()
@@ -40,7 +41,7 @@ public class SpawnController : MonoBehaviour
       for (int i = 0; i < 1; i++)
       {
          GameObject newEnemyCar = Instantiate(enemyCarPrefab[Random.Range(0,enemyCarPrefab.Length)]);
-         newEnemyCar.transform.position = new Vector3(x,1, Random.Range(minZ, maxZ));
+         newEnemyCar.transform.position = new Vector3(x,0, Random.Range(minZ, maxZ));
       }
    }
 
