@@ -6,8 +6,7 @@ using UnityEngine;
 public class CarMovementController : MonoBehaviour
 {
     [SerializeField] private float carSpeed;
-    [SerializeField] private float maxSpeed;
-
+    
     private Vector3 _moveVec;
 
     private void Update()

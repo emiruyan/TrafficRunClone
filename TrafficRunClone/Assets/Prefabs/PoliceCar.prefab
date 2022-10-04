@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 7584621170090828308}
   - component: {fileID: 7584621170090828306}
   - component: {fileID: 7584621170090828309}
+  - component: {fileID: 5037661893057302733}
   m_Layer: 0
   m_Name: PoliceCar
-  m_TagString: Untagged
+  m_TagString: EnemyCar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -48,7 +49,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!114 &7584621170090828309
 MonoBehaviour:
@@ -63,7 +64,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 110
-  lifeTime: 3
+--- !u!65 &5037661893057302733
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7584621170090828311}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.022713931, y: 0.018330138, z: 0.050452713}
+  m_Center: {x: 0.0006575499, y: 0.004164033, z: 0.0014331142}
 --- !u!1001 &7584621168678343701
 PrefabInstance:
   m_ObjectHideFlags: 0
