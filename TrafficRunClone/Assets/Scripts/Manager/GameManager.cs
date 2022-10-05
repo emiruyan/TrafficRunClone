@@ -4,16 +4,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameManager : MonoBehaviour
+public class GameManager : MonoSingleton<GameManager>
 {
-   private void OnCollisionEnter(Collision other)
-   {
-      if (other.gameObject.CompareTag("EnemyCar"))
-      {
-         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-      }
-   }
-
+  public void PlayAgain()
+  {
+    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+  }
 }
 
 
