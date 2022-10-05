@@ -10,12 +10,12 @@ public class MonoSingleton<T> : MonoBehaviour where T: MonoSingleton<T>
     {
         get
         {
-            if (instance ==null)//instace null ise;
+            if (instance == null)//instace null ise;
             {
                 instance = FindObjectOfType(typeof(T)) as T;//sahnedeki objenin tipine göre bulup instance'a ata
             }
             
-            return instance;
+            return instance;//instance'ı döndür
         }
-    } 
+    }
 }
