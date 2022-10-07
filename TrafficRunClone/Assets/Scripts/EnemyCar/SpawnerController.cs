@@ -28,7 +28,7 @@ public class SpawnerController : MonoBehaviour
       
       enemyCarPrefab.transform.position = new Vector3(x,0, Random.Range(minZ, maxZ));//Ve bu transform değerlerinde oluşturuyoruz
       
-      yield return new WaitForSeconds(spawnInterval);
+      yield return new WaitForSeconds(spawnInterval); 
     }
     
   }
