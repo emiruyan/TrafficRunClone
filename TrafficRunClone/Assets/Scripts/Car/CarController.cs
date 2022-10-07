@@ -42,7 +42,15 @@ public class CarController : MonoBehaviour
             GameManager.Instance.NextLevel();
         }
     }
-    
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Coin"))
+        {
+            GameManager.Instance.GameScore();
+            Destroy(other.gameObject);
+        }
+    }
 }
 
 

@@ -1,10 +1,13 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameManager : MonoSingleton<GameManager>
 {
-public Button tryAgainButton;
+    [HideInInspector] public int score = 0;
+    [SerializeField] private TextMeshProUGUI scoreText;
+    public Button tryAgainButton;
     
     public void NextLevel()
   {
@@ -14,6 +17,13 @@ public Button tryAgainButton;
   public void PlayAgain()
   {
       SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+  }
+
+  public void GameScore()
+  {
+      score++;
+      scoreText.text = score.ToString();
+      
   }
 }
 
