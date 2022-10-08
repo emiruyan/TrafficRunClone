@@ -227,8 +227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 901f6d7b91b7af644beef99cfb2d8575, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  carSpeed: 50
-  maxSpeed: 50
+  carSpeed: 30
 --- !u!1 &4985921952744180002
 GameObject:
   m_ObjectHideFlags: 0

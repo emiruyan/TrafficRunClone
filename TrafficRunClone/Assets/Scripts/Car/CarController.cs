@@ -34,6 +34,7 @@ public class CarController : MonoBehaviour
         if (other.gameObject.CompareTag("EnemyCar"))
         { 
             Time.timeScale = 0;
+            GameManager.Instance.gameOverImage.gameObject.SetActive(true);
             GameManager.Instance.tryAgainButton.gameObject.SetActive(true);
         }
         

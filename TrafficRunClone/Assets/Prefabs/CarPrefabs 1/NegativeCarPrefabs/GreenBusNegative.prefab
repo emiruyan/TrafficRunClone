@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 6269229079788652560}
   - component: {fileID: 6269229079788652590}
-  - component: {fileID: 1436386500629980800}
   - component: {fileID: -1363860944285883166}
+  - component: {fileID: 5015779667083684969}
   m_Layer: 0
-  m_Name: GreenBus
+  m_Name: GreenBusNegative
   m_TagString: EnemyCar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26,7 +26,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6269229079788652563}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -155.8, y: -1, z: 127}
   m_LocalScale: {x: 200, y: 200, z: 200}
   m_ConstrainProportionsScale: 0
@@ -34,7 +34,7 @@ Transform:
   - {fileID: 6269229078670476246}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!54 &6269229079788652590
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -51,19 +51,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!114 &1436386500629980800
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6269229079788652563}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c1655bcd61631f4593fbadae09fbcdc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 70
 --- !u!65 &-1363860944285883166
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -77,6 +64,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.026407192, y: 0.029136157, z: 0.11058062}
   m_Center: {x: 0.0003929484, y: 0.010267308, z: -0.004799752}
+--- !u!114 &5015779667083684969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6269229079788652563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 491fa17e716acd345a1a5935d043d802, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 70
 --- !u!1001 &6269229078670448712
 PrefabInstance:
   m_ObjectHideFlags: 0

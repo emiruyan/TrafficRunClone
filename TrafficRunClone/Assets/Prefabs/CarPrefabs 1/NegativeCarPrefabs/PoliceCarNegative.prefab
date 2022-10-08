@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 7584621170090828308}
   - component: {fileID: 7584621170090828306}
-  - component: {fileID: 7584621170090828309}
   - component: {fileID: 5037661893057302733}
+  - component: {fileID: 4979305642106258517}
   m_Layer: 0
-  m_Name: PoliceCar
+  m_Name: PoliceCarNegative
   m_TagString: EnemyCar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26,7 +26,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7584621170090828311}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -163.6, y: -1, z: 122.2}
   m_LocalScale: {x: 250, y: 250, z: 250}
   m_ConstrainProportionsScale: 0
@@ -34,7 +34,7 @@ Transform:
   - {fileID: 7584621168678508553}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!54 &7584621170090828306
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -51,19 +51,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!114 &7584621170090828309
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7584621170090828311}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c1655bcd61631f4593fbadae09fbcdc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 70
 --- !u!65 &5037661893057302733
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -77,6 +64,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.022713931, y: 0.018330138, z: 0.050452713}
   m_Center: {x: 0.0006575499, y: 0.004164033, z: 0.0014331142}
+--- !u!114 &4979305642106258517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7584621170090828311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 491fa17e716acd345a1a5935d043d802, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 70
 --- !u!1001 &7584621168678343701
 PrefabInstance:
   m_ObjectHideFlags: 0

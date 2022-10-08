@@ -8,10 +8,11 @@ public class GameManager : MonoSingleton<GameManager>
     [HideInInspector] public int score = 0;
     [SerializeField] private TextMeshProUGUI scoreText;
     public Button tryAgainButton;
+    public Image gameOverImage;
     
     public void NextLevel()
   {
-    SceneManager.LoadScene(1);
+    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
   }
   
   public void PlayAgain()
